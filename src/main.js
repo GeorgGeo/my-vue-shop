@@ -35,7 +35,7 @@ app.use(autoAnimatePlugin);
 
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/my-vue-shop/'), // Используем HTML5 history mode
   routes: [
     { path: '/', name: 'Home', component: HomePage },
     { path: '/favorites', name: 'Favorites', component: FavoritesVue },
